@@ -1,0 +1,15 @@
+extern def printf(fmt: String, ...): Int;
+
+def fibonacci(n: Int): Int {
+    if n <= 2 {
+        return 1;
+    } else {
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+}
+
+def main() {
+    let n: Int = 10;
+    printf("fibonacci(%d) = %d", n, fibonacci(n));
+    return;
+}
